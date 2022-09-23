@@ -1,8 +1,4 @@
-const colors = {
-    background: '#1C1C1C',
-    background2: '#2C2C2C',
-    background3: '#3C3C3C',
-    background4: '#4c4c4c',
+const base = {
     'gray.100': '#FFFFFF',
     'gray.150': '#F5F5FA',
     'gray.200': '#F0F0F5',
@@ -212,4 +208,33 @@ const colors = {
     'blackAlpha.900': 'rgba(0, 0, 0, 0.92)'
 }
 
-export { colors }
+const colors = {
+    'background': base['gray.900'],
+    'rocketseat-light': base['purple.400'],
+    'rocketseat-mid': base['purple.500'],
+    'rocketseat-dark': '#633BBC',
+    'shape-primary': base['gray.800'],
+    'shape-secondary': base['gray.700'],
+    'shape-tertiary': base['gray.600'],
+    'placeholder': base['gray.400'],
+    'text-support': base['gray.300'],
+    'text-base': base['gray.200'],
+    'text-title': base['gray.100'],
+    'success-base': base['green.500'],
+    'success-light': '#1B873F',
+    'danger-base': '#CC2937',
+    'danger-light': '#F75A68',
+    'warning-base': '#EB8A1D',
+    'warning-light': '#FBA94C'
+}
+
+const opacitys = {
+    'opacity-default': '100%',
+    'opacity-semiOpaque': '90%',
+    'opacity-intense': '75%',
+    'opacity-medium': '50%',
+    'opacity-light': '25%',
+    'opacity-semiTransparent': '10%',
+}
+
+export { colors, opacitys }
