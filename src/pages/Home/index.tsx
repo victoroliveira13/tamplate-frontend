@@ -1,23 +1,16 @@
 import React from 'react';
 
-import BoxComponent from '../../Components/Layout/Box';
+import Label from '../../Components/DataDisplay/Label';
 import { Container } from './styles';
 
-const pages: React.FC = () => {
+const Home: React.FC = () => {
   return (
     <Container>
-      <BoxComponent
-        css={{
-          width: '20rem',
-          height: '20rem',
-          backgroundColor: 'shape-secondary',
-          backgroundHover: 'shape-tertiary',
-        }}
-      >
-        <label>Test</label>
-      </BoxComponent>
+      <Label>
+        LABEL
+      </Label>
     </Container>
   );
 }
 
-export default pages;
+export default Home;

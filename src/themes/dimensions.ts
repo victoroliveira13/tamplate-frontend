@@ -7,8 +7,13 @@ const dimensions = {
 }
 
 const radius = {
+  'radii-xs': '2.5px',
+  'radii-sm': '5px',
   sm: '5px',
-  md: '8px'
+  md: '8px',
+  'radii-md': '10px',
+  'radii-lg': '20px',
+  'radii-full': '99999px',
 }
 
 const sizes = {
@@ -44,6 +49,7 @@ const spaces = {
 
 const typography = {
   fontSizes: {
+    xxs: '0.625rem',
     xs: '0.75rem',
     sm: '0.87rem',
     md: '1rem',
