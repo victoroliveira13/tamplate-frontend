@@ -1,15 +1,21 @@
 import React from 'react';
-import { MdPerson } from 'react-icons/md';
 
-import Button from '../../Components/Form/Button';
+import BoxComponent from '../../Components/Layout/Box';
 import { Container } from './styles';
 
 const pages: React.FC = () => {
   return (
     <Container>
-      <Button leftIcon={<MdPerson/>}>
-        LABEL
-      </Button>
+      <BoxComponent
+        css={{
+          width: '20rem',
+          height: '20rem',
+          backgroundColor: 'shape-secondary',
+          backgroundHover: 'shape-tertiary',
+        }}
+      >
+        <label>Test</label>
+      </BoxComponent>
     </Container>
   );
 }
