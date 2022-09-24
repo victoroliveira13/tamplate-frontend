@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Heading from '../../Components/Typography/Heading';
 import Text from '../../Components/Typography/Text';
 
 import { Container } from './styles';
@@ -7,7 +7,8 @@ import { Container } from './styles';
 const Home: React.FC = () => {
   return (
     <Container>
-      <Text size='md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget mi eu justo imperdiet congue id eu orci. Cras vehicula nunc eu mi efficitur porta. Sed porta velit et luctus tempor.</Text>
+      <Heading>Title</Heading>
+      <Text>ipsen liren dolor</Text>
     </Container>
   );
 }
