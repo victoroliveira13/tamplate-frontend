@@ -209,7 +209,7 @@ const base = {
 }
 
 const colors = {
-    'background': base['gray.900'],
+    'background': base['gray.850'],
     'rocketseat-light': base['purple.400'],
     'rocketseat-mid': base['purple.500'],
     'rocketseat-dark': '#633BBC',
@@ -237,4 +237,5 @@ const opacitys = {
     'opacity-semiTransparent': '10%',
 }
 
-export { colors, opacitys }
+export { base, colors, opacitys }
+

@@ -1,14 +1,13 @@
 import React from 'react';
-import Heading from '../../Components/Typography/Heading';
-import Text from '../../Components/Typography/Text';
+import { MdPerson } from 'react-icons/md';
+import TextField from '../../Components/Form/TextField';
 
 import { Container } from './styles';
 
 const Home: React.FC = () => {
   return (
     <Container>
-      <Heading>Title</Heading>
-      <Text>ipsen liren dolor</Text>
+      <TextField placeholder='Placeholder' leftIcon={<MdPerson />} />
     </Container>
   );
 }
