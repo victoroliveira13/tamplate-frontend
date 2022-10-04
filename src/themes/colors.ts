@@ -225,7 +225,8 @@ const colors = {
     'danger-base': '#CC2937',
     'danger-light': '#F75A68',
     'warning-base': '#EB8A1D',
-    'warning-light': '#FBA94C'
+    'warning-light': '#FBA94C',
+    'border-color': base['whiteAlpha.100'],
 }
 
 const opacitys = {

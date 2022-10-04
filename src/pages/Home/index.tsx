@@ -1,13 +1,17 @@
 import React from 'react';
-import { MdPerson } from 'react-icons/md';
-import TextField from '../../Components/Form/TextField';
+import { MdBackspace } from 'react-icons/md';
+import Autocomplete from '../../Components/Form/Autocomplete';
 
 import { Container } from './styles';
+
+//options autocomplete
+import { loadLists } from './data';
+const Data = loadLists();
 
 const Home: React.FC = () => {
   return (
     <Container>
-      <TextField placeholder='Placeholder' leftIcon={<MdPerson />} />
+      <Autocomplete backspace={<MdBackspace />} data={Data} defaultValue="Masculino"/>
     </Container>
   );
 }

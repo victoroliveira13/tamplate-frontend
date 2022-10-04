@@ -4,6 +4,7 @@ export const Container = styled.div`
   height: 100vh;
   padding: 0 20%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: ${props => props.theme.colors.background};

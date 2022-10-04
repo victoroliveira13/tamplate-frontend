@@ -12,6 +12,10 @@ export const Container = styled.div<IProps>`
   width: 100%;
   display: flex;
   align-items: center;
+  .bkspace {
+    display: flex;
+    align-items: center;
+  }
   svg {
     position: absolute;
     left: ${props => props.margin === 'left' && 0};
