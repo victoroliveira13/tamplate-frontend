@@ -10,6 +10,7 @@ interface IPropsTextField {
   field?: string,
   placeholder?: string,
   disabled?: boolean,
+  readOnly?: boolean,
   error?: boolean,
   leftIcon?: IconBaseProps,
   rightIcon?: IconBaseProps,
@@ -27,6 +28,7 @@ const TextField: React.FC<IPropsTextField> = ({
   field,
   placeholder,
   disabled,
+  readOnly,
   error,
   leftIcon,
   rightIcon,
@@ -51,7 +53,7 @@ const TextField: React.FC<IPropsTextField> = ({
         type={type ? type : 'text'}
         defaultValue={defaultValue}
         value={field? field : value}
-        readOnly={false}
+        readOnly={readOnly}
         placeholder={placeholder}
         disabled={disabled}
         error={error}

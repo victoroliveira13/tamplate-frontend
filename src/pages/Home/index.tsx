@@ -1,17 +1,16 @@
 import React from 'react';
-import { MdBackspace } from 'react-icons/md';
-import Autocomplete from '../../Components/Form/Autocomplete';
 
 import { Container } from './styles';
 
 //options autocomplete
 import { loadLists } from './data';
+import SelectionField from '../../Components/Form/SelectionField';
 const Data = loadLists();
 
 const Home: React.FC = () => {
   return (
     <Container>
-      <Autocomplete backspace={<MdBackspace />} data={Data} defaultValue="Masculino"/>
+      <SelectionField  data={Data}/>
     </Container>
   );
 }
