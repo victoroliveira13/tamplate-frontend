@@ -1,7 +1,7 @@
 import React from 'react';
-import LinkButton from '../../Components/Form/LinkButton';
-import TextField from '../../Components/Form/TextField';
-import { Md11Mp } from 'react-icons/md'
+import { MdAdd } from 'react-icons/md';
+import IconButton from '../../Components/Form/IconButton';
+
 
 import { Container } from './styles';
 
@@ -9,7 +9,7 @@ import { Container } from './styles';
 const Home: React.FC = () => {
   return (
     <Container>
-      <LinkButton to='/' label='label' leftIcon={<Md11Mp />} />
+      <IconButton icon={<MdAdd />}  size='lg'  onClick={() => console.log('clicado')}/>
     </Container>
   );
 }
